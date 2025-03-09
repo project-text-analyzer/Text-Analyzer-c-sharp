@@ -1,4 +1,4 @@
-Console.WriteLine("[!] Welcome to The Sigma Txt Analyzer");
+Console.WriteLine("[*] Welcome to The Sigma Txt Analyzer");
 Console.WriteLine("Enter your text:");
 string text = Console.ReadLine();
 
