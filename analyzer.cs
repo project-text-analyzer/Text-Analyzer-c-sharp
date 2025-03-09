@@ -33,24 +33,18 @@ void ShowMenu()
 }
 void RunOption(string pick)
 {
-    if (pick == "1")
+    switch (pick)
     {
-        
-    }
-    else if (pick == "2")
-    {
-        
-    }
-    else if (pick == "3")
-    {
-        
-    }
-    else if (pick == "4")
-    {
-        
-    }
-    else
-    {
-        Console.WriteLine("[!] Invalid input, pick a number between 1 and 5.");
+        case "1":
+            break;
+        case "2":
+            break;
+        case "3":
+            break;
+        case "4":
+            break;
+        default:
+            Console.WriteLine("[!] Invalid input, pick a number between 1 and 5.");
+            break;
     }
 }
