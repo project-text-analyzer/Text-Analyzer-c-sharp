@@ -18,6 +18,7 @@ while (true)
         Console.WriteLine("Sayonara!");
         break;
     }
+    RunOption(pick);
 }
 
 void ShowMenu()
@@ -29,4 +30,27 @@ void ShowMenu()
     Console.WriteLine("4. Word Lengths");
     Console.WriteLine("5. Exit");
     Console.Write("Pick an option (1-5): ");
+}
+void RunOption(string pick)
+{
+    if (pick == "1")
+    {
+        
+    }
+    else if (pick == "2")
+    {
+        
+    }
+    else if (pick == "3")
+    {
+        
+    }
+    else if (pick == "4")
+    {
+        
+    }
+    else
+    {
+        Console.WriteLine("[!] Invalid input, pick a number between 1 and 5.");
+    }
 }
