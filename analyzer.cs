@@ -40,7 +40,25 @@ void RunOption(string pick)
         case "2":
             break;
         case "3":
-            break;
+            int totalCharacters = text.Length;
+                int letterCount = 0;
+                int digitCount = 0;
+                int whitespaceCount = 0;
+
+                foreach (char c in text)
+                {
+                    if (char.IsLetter(c))
+                        letterCount++;
+                    if (char.IsDigit(c))
+                        digitCount++;
+                    if (char.IsWhiteSpace(c))
+                        whitespaceCount++;
+                }
+                Console.WriteLine("Total Characters: " + totalCharacters);
+                Console.WriteLine("Total Letters: " + letterCount);
+                Console.WriteLine("Total Digits: " + digitCount);
+                Console.WriteLine("Total Whitespaces: " + whitespaceCount);
+                break;
         case "4":
             break;
         default:
