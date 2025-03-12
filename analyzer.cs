@@ -1,3 +1,5 @@
+using System.Linq;
+
 Console.WriteLine("[*] Welcome to The Sigma Txt Analyzer");
 Console.WriteLine("Enter your text:");
 string text = Console.ReadLine();
@@ -39,6 +41,45 @@ void RunOption(string pick)
             string[] words = text.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
             Console.WriteLine("Word Count: " + words.Length);
         case "2":
+            string[] textWords = text.ToLower().Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+                    
+                    // Positive words list
+                    string[] positiveWords = new string[] {
+                        "happy", "great", "awesome", "good", "excellent", "wonderful", "amazing",
+                        "beautiful", "love", "joy", "fantastic", "perfect", "nice", "lovely",
+                        "exciting", "brilliant", "super", "cool", "fun", "glad", "positive",
+                        "success", "win", "cheerful", "delight", "pleasure", "hope"
+                    };
+
+                    // Negative words list
+                    string[] negativeWords = new string[] {
+                        "sad", "bad", "terrible", "awful", "horrible", "depressing", "angry",
+                        "hate", "miserable", "poor", "dreadful", "pain", "sucks", "stupid",
+                        "ugly", "boring", "annoying", "mad", "furious", "fail", "negative",
+                        "stress", "anxiety", "fear", "disappoint", "upset", "hurt"
+                    };
+
+                    int positiveCount = 0;
+                    int negativeCount = 0;
+
+                    foreach (string word in textWords)
+                    {
+                        if (positiveWords.Contains(word))
+                            positiveCount++;
+                        if (negativeWords.Contains(word))
+                            negativeCount++;
+                    }
+
+                    Console.WriteLine("Mood Analysis:");
+                    Console.WriteLine($"Positive words found: {positiveCount}");
+                    Console.WriteLine($"Negative words found: {negativeCount}");
+                    
+                    if (positiveCount > negativeCount)
+                        Console.WriteLine("Overall mood: Positive");
+                    else if (negativeCount > positiveCount)
+                        Console.WriteLine("Overall mood: Negative");
+                    else
+                        Console.WriteLine("Overall mood: Neutral");
             break;
         case "3":
             int totalCharacters = text.Length;
