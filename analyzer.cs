@@ -36,7 +36,8 @@ void RunOption(string pick)
     switch (pick)
     {
         case "1":
-            break;
+            string[] words = text.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            Console.WriteLine("Word Count: " + words.Length);
         case "2":
             break;
         case "3":
