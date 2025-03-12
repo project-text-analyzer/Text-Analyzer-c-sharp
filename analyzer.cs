@@ -20,6 +20,19 @@ while (true)
         Console.WriteLine("Sayonara!");
         break;
     }
+    while (pick != "1" && pick != "2" && pick != "3" && pick != "4" && pick != "5")
+            {
+                Console.WriteLine("[!] Invalid input, please pick a number between 1 and 5.");
+                Console.WriteLine("Try again? (y/n): ");
+                string tryAgain = Console.ReadLine().ToLower();
+                if (tryAgain != "y")
+                {
+                    Console.WriteLine("Sayonara!");
+                    return; 
+                }
+                ShowMenu();
+                pick = Console.ReadLine();
+            }
     RunOption(pick);
 }
 
