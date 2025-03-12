@@ -102,7 +102,52 @@ void RunOption(string pick)
                 Console.WriteLine("Total Whitespaces: " + whitespaceCount);
                 break;
         case "4":
-            break;
+            bstring[] wordArray = text.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+                    
+                    string[] topWords = new string[5];
+                    int[] topLengths = new int[5];
+                    
+                    for (int i = 0; i < 5; i++)
+                    {
+                        topWords[i] = "";
+                        topLengths[i] = 0;
+                    }
+
+                    foreach (string word in wordArray)
+                    {
+                        int wordLength = word.Length;
+                        
+                        for (int i = 0; i < 5; i++)
+                        {
+                            if (wordLength > topLengths[i])
+                            {
+                                for (int j = 4; j > i; j--)
+                                {
+                                    topWords[j] = topWords[j - 1];
+                                    topLengths[j] = topLengths[j - 1];
+                                }
+                                topWords[i] = word;
+                                topLengths[i] = wordLength;
+                                break;
+                            }
+                        }
+                    }
+
+                    Console.WriteLine("Top 5 Longest Words:");
+                    bool hasWords = false;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        if (topLengths[i] > 0)
+                        {
+                            Console.WriteLine($"{i + 1}. {topWords[i]} (Length: {topLengths[i]})");
+                            hasWords = true;
+                        }
+                    }
+                    if (!hasWords)
+                    {
+                        Console.WriteLine("No words found!");
+                    }
+                    break;
         default:
             Console.WriteLine("[!] Invalid input, pick a number between 1 and 5.");
             break;
