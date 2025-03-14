@@ -53,6 +53,7 @@ void RunOption(string pick)
         case "1":
             string[] words = text.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
             Console.WriteLine("Word Count: " + words.Length);
+            break;
         case "2":
             string[] textWords = text.ToLower().Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
                     
