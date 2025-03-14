@@ -116,7 +116,7 @@ void RunOption(string pick)
                 Console.WriteLine("Total Whitespaces: " + whitespaceCount);
                 break;
         case "4":
-            bstring[] wordArray = text.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] wordArray = text.Split(new char[] { ' ', '\t', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries);
                     
                     string[] topWords = new string[5];
                     int[] topLengths = new int[5];
