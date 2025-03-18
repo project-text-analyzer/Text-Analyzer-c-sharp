@@ -42,8 +42,8 @@ while (true)
             break;
 
         case "2":
-            string[] positiveWords = { "happy", "good", "great", "awesome", "love" };
-            string[] negativeWords = { "sad", "bad", "terrible", "hate", "awful" };
+            string[] positiveWords = { "happy", "great", "awesome", "good", "excellent", "wonderful", "amazing", "beautiful", "love", "joy", "fantastic", "perfect", "nice", "lovely", "exciting", "brilliant", "super", "cool", "fun", "glad", "positive", "success", "win", "cheerful", "delight", "pleasure", "hope" };
+            string[] negativeWords = { "sad", "bad", "terrible", "awful", "horrible", "depressing", "angry", "hate", "miserable", "poor", "dreadful", "pain", "sucks", "stupid", "ugly", "boring", "annoying", "mad", "furious", "fail", "negative", "stress", "anxiety", "fear", "disappoint", "upset", "hurt" };
 
             int positiveCount = 0;
             int negativeCount = 0;
