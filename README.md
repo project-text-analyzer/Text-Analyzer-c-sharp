@@ -1,7 +1,7 @@
 # Sigma Text Analyzer
 
 ## Overview
-The Sigma Text Analyzer is a simple C# console application that analyzes text input by users. It counts words, checks the mood (positive or negative), tracks letters/digits/spaces, finds the top 3 longest words, keeps a history of inputs, and saves results to a file. It’s built for my school project to show how code can process text in fun ways!
+The Sigma Text Analyzer is a simple C# program that analyzes text input by users
 
 ## Features
 - **Count Words**: Counts the number of words by looking at spaces.
