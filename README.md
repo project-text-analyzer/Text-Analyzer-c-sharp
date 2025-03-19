@@ -39,3 +39,10 @@ The Sigma Text Analyzer is a simple C# program that analyzes text input by users
 - **Bigger History**: Expand history beyond 5 entries with a scrollable list.
 - **Mood Expansion**: Add more positive/negative words or let users customize the lists.
 - **File Append**: Option to add to a file instead of overwriting it.
+
+## Documentation
+See the full code explanation [here](https://gist.github.com/so1icitx/6ca1656c37528ee07a131f70b8d072a4).
+
+## Shameless promo
+Tryhackme [here](https://tryhackme.com/p/so1icitx).
+My site [here](https://so1icitx.cfd/).
