@@ -44,7 +44,7 @@ The Sigma Text Analyzer is a simple C# program that analyzes text input by users
 See the full code explanation [here](https://gist.github.com/so1icitx/6ca1656c37528ee07a131f70b8d072a4).
 
 ## Presentation
-See the presentation [here](https://www.mediafire.com/file/lwuhi7einjjzxux/sigma.pptx/file)
+Download the presentation [here](https://www.mediafire.com/file/lwuhi7einjjzxux/sigma.pptx/file)
 
 ## Shameless promo
 Tryhackme [here](https://tryhackme.com/p/so1icitx).
