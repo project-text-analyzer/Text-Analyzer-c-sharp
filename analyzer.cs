@@ -85,7 +85,7 @@ while (true)
 
     if (choice != "6" && choice != "7")
     {
-        Console.Write("[!] New text (or Enter to keep '" + text + "'): ");
+        Console.Write($"[!] New text (or Enter to keep '{text}'): ");
         string newText = Console.ReadLine();
 
         if (newText != "")
@@ -114,7 +114,7 @@ string WordCount(string text)
         }
     }
 
-    return "Word Counter: " + count;
+    return $"Word Counter: {count}";
 }
 
 string MoodCheck(string text, string[] positiveWords, string[] negativeWords)
@@ -183,9 +183,9 @@ string TextStats(string text)
     }
 
     string result = "";
-    result = result + "Spaces: " + spaceCount + "\n";
-    result = result + "Letters: " + letterCount + "\n";
-    result = result + "Digits: " + digitCount;
+    result = result + $"Spaces: {spaceCount}\n";
+    result = result + $"Letters: {letterCount}\n";
+    result = result + $"Digits: {digitCount}";
     return result;
 }
 
@@ -235,15 +235,15 @@ string Top3Words(string text)
     string result = "";
     if (topWords[0] != "")
     {
-        result = result + "1: " + topWords[0] + ", length: " + topLengths[0] + "\n";
+        result = result + $"1: {topWords[0]}, length: {topLengths[0]}\n";
     }
     if (topWords[1] != "")
     {
-        result = result + "2: " + topWords[1] + ", length: " + topLengths[1] + "\n";
+        result = result + $"2: {topWords[1]}, length: {topLengths[1]}\n";
     }
     if (topWords[2] != "")
     {
-        result = result + "3: " + topWords[2] + ", length: " + topLengths[2];
+        result = result + $"3: {topWords[2]}, length: {topLengths[2]}";
     }
     return result;
 }
@@ -257,7 +257,7 @@ string ShowHistory(string[] history, int historyCount)
     {
         if (history[i] != null)
         {
-            result = result + "[*] " + (i + 1) + ": '" + history[i] + "'\n";
+            result = result + $"[*] {i + 1}: '{history[i]}'\n";
         }
     }
 
@@ -276,23 +276,23 @@ void SaveResults(string text, string[] positiveWords, string[] negativeWords, st
 
     string results = "";
     results = results + "Analyzer Results\n";
-    results = results + "Text: " + text + "\n";
+    results = results + $"Text: {text}\n";
 
     string wordResult = WordCount(text);
-    results = results + wordResult + "\n";
+    results = results + $"{wordResult}\n";
 
     string moodResult = MoodCheck(text, positiveWords, negativeWords);
-    results = results + moodResult + "\n";
+    results = results + $"{moodResult}\n";
 
     string statsResult = TextStats(text);
-    results = results + statsResult + "\n";
+    results = results + $"{statsResult}\n";
 
     string top3Result = Top3Words(text);
-    results = results + top3Result + "\n";
+    results = results + $"{top3Result}\n";
 
     string historyResult = ShowHistory(history, historyCount);
     results = results + historyResult;
 
     System.IO.File.WriteAllText(fileName, results);
-    Console.WriteLine("[!] Saved to '" + fileName + "'");
+    Console.WriteLine($"[!] Saved to '{fileName}'");
 }
