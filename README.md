@@ -29,7 +29,7 @@ The Sigma Text Analyzer is a simple C# program that analyzes text input by users
 
 ## Known Bugs
 - **Punctuation Issue**: Words with punctuation (e.g., "happy!") don’t match the mood lists because they’re not stripped, so they’re ignored.
-- **Multiple Spaces in Top 3**: If text has extra spaces (e.g., "happy   great"), `Top3Words` might process empty strings but won’t show them, but i dont like stuff like that but malware anaylsis awaits me.
+- **Multiple Spaces in Top 3**: If the text has extra spaces (e.g., "happy   great"), `Top3Words` might process empty strings but won’t show them which isnt nice, but im too lazy to fix it :p.
 
 ## Past Bugs (Fixed)
 - **Last Word Missed**: Early versions of `Top3Words` skipped the last word. Fixed by improving the logic to handle word boundaries better (no need for extra space anymore).
