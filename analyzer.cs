@@ -8,7 +8,34 @@ string asciiLogo = """""
                    8bodP' 88  YboodP 88 YY 88 dP""""Yb       88   dP  Yb   88       dP""""Yb 88  Y8 dP""""Yb 88ood8      dP    d8888 888888 88  Yb 
 
                    """"";
-Console.WriteLine(asciiLogo);
+
+string secret = """""
+                
+                  . -  -" - - . 
+                  /            \ 
+                 /    o  o     \   
+                (       ^       , ) 
+                 \     __,     /- . _ 
+                  `. _____   .'      `- - .__ 
+                         \   /                   `/ ` ` "    " ' - . 
+                          Y    7      sigma    /                 :
+                          |   /                 |            . - - .            
+                          /  /        __       \ /    `. __. :. ____. - . 
+                         /  / / `  "    "  "  ` /         .-"..____    . - .\ 
+                     _.-'  /_/               (                          \ - . \ 
+                    `=----'                     `- - - - - - - - - -  ' " "  `-. \ `"Æ¨‹
+                """"";
+
+Random rand = new Random();
+int num = rand.Next(0, 2);
+if (num == 1)
+{
+    Console.WriteLine(asciiLogo);
+}
+else
+{
+    Console.WriteLine(secret);
+}
 Console.WriteLine("[*] Welcome to the SIGMA Text Analyzer!!");
 
 Console.Write("[!] Enter your text: ");
