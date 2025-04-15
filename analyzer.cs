@@ -102,7 +102,7 @@ while (true)
             break;
 
         case "7":
-            Console.WriteLine("[!] Bye bye!");
+            Console.WriteLine("[!] Sayonara!");
             return;
 
         default:
