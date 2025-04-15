@@ -11,7 +11,7 @@ The Sigma Text Analyzer is a simple C# program that analyzes text input by users
 - **Top 3 Words**: Lists the 3 longest words and their lengths.
 - **Show History**: Displays up to 5 past text inputs.
 - **Save Results**: Saves all analysis to a file you name.
-- **Exit**: Quits the program with a friendly "Bye bye!".
+- **Exit**: Quits like sigma.
 
 ## How to Use
 1. **Run the Program**: Open it in a C# environment (like Visual Studio).
@@ -46,7 +46,7 @@ The Sigma Text Analyzer is a simple C# program that analyzes text input by users
 See the full code explanation [here](https://gist.github.com/so1icitx/6ca1656c37528ee07a131f70b8d072a4).  
 
 ## Presentation
-Download the presentation [here](https://www.mediafire.com/file/8it9skvwc6la2sx/3CvkSsvqBJOV5jEKAGYBu7.pptx/file).  
+Download the presentation [here](https://www.mediafire.com/file/7d0rt6wrcs4c1l3/bmlnZ2FuaWdnYW5pZ2dh.pptx/file).  
 
 ## Shameless Promo
 TryHackMe [here](https://tryhackme.com/p/so1icitx).  
